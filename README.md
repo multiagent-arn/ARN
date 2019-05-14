@@ -3,16 +3,36 @@
 
 ## Installation instructions
 
-Install according to README-pymarl-beta.md.
+This project based on [SMAC](https://github.com/oxwhirl/smac) and [pymarl](https://github.com/oxwhirl/pymarl)
 
-Unzip SMAC_Maps_supply.tar.gz and move to the map folder
+OS: Ubuntu 14 or 16 
+
+Install StarCraftII:
+
+```shell
+chmod 755 ./install_sc2.sh
+./install_sc2.sh
+tar -xvf SMAC_Maps_supply.tar.gz
+mv SMAC_Maps/* 3rdparty/StarCraftII/Maps/SMAC_Maps/
+```
+
+You must install anaconda before installing code env.
+
+Install Code Env: 
+
+```shell
+conda create -n ARN python=3.6
+source activate ARN
+conda install certifi==2018.8.24
+pip install -r requirements.txt
+```
 
 ## Run an experiment 
 
-First:
-
+Activate Code Env:
 ```shell
-export PYTHONPATH=.
+source activate ARN
+export PYTHONPATH=. 
 ```
 
 Than:
