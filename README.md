@@ -125,12 +125,14 @@ python src/main.py --config=qmix_smac --env-config=sc2 with env_args.map_name=15
 python src/main.py --config=qmix_smac --env-config=sc2 with env_args.map_name=2s3z agents_num=5 enemies_num=5 legal_action=False batch_size_run=1 use_tensorboard=True save_model=True runner_log_interval=2000 env='sc2' type1_num=3 type2_num seed=5 agent='dense' dense_size=128
 ```
 
-##### ARN-Mixed
+##### Mixed ARN
 ```shell
 python src/main.py --config=qmix_smac --env-config=sc2 with env_args.map_name=2s3z agents_num=5 enemies_num=5 legal_action=False batch_size_run=4 use_tensorboard=True save_model=True runner_log_interval=2000 env='sc2_sort' type1_num=3 type2_num=2 seed=5 agent='arn_diff_rnn'  arn_hidden_size=64
 ```
 
+<!---
 ##### ARN
 ```shell
 python src/main.py --config=qmix_smac --env-config=sc2 with env_args.map_name=2s3z agents_num=5 enemies_num=5 legal_action=False batch_size_run=4 use_tensorboard=True save_model=True runner_log_interval=2000 env='sc2_sort' type1_num=3 type2_num=2 seed=5 agent='arn_wo_share_diff'  arn_hidden_size=64
 ```
+---->
